@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* header */
+header .header__container {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    height: 5.5rem;
+    margin: auto;
+    position: relative;
+}
+
+header .header__container__logo {
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+}
+
+header .header__container__logo span {
+    color: #dc4312;
+    font-size: 4rem;
+}
+
+header .header__container__logo p {
+    text-transform: uppercase;
+    padding-left: 1.5rem;
+    letter-spacing: 2px;
+    color: white;
+}
+
+header nav {
+    width: 50%;
+    margin-top: 2rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #29c0ff;
+}
+
+header nav ul li a.active {
+    color: #dc4312;
+}
+
+/* carousel */
+#carousel {
+    background-image: url(./../images/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80rem;
+}
+
+#carousel .carousel__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: right;
+    justify-content: flex-end;
+    padding-right: 10rem;
+}
+
+#carousel .carousel__details h3 {
+    font-size: 4.5rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    padding-bottom: 3rem;
+    line-height: 2rem;
+}
+
+#carousel .carousel__details p {
+    letter-spacing: 7px;
+    font-weight: 300;
+    padding-top: 14px;
+    line-height: 1.7rem;
+    font-size: 1.5rem;
+}
+
+/* about */
+#about {
+    background-color: #29c0ff;
+    color: white;
+    padding-left: 8rem;
+}
+
+#about h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 1rem 0;
+}
+
+#about p {
+    font-weight: 300;
+    padding: 1rem 10rem 1rem 0;
+    font-size: 1.5rem;
+    color: #E2E2E2;
+}
+
+/* welcome */
+#welcome h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#welcome p {
+    font-weight: 300;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    color: #909090;
+}
+
+#welcome .welcome__container__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    margin: auto;
+}
+
+#welcome .welcome__items {
+    position: relative;
+}
+
+#welcome .welcome__items img {
+    width: 100%;
+    height: 100%;
+}
+
+#welcome .welcome__items .text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(14, 83%, 53%, 0.71);
+    opacity: 0;
+}
+
+#welcome .welcome__items:hover .text {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+#welcome .welcome__items i {
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    opacity: 1;   
+}
+
+#welcome .welcome__items:hover i {
+    opacity: 1;
+    transform: translateX(45%);
+    transition: all 0.5s;
+}
+
+#welcome .welcome__items .welcome__title {
+    display: flex;
+    padding: 10px;
+}
+
+#welcome .welcome__items .welcome__title i {
+    color: #656dd4;
+    transform: none ;
+    width: 26px;
+    margin-right: 7px;
+}
+
+#welcome .welcome__items .welcome__title h3 {
+    color: #eb5424;
+    padding: 0;
+    font-size: 2rem;
+}
+
+#welcome .welcome__items p {
+    margin-left: 43px;
+    color: #A0A0A0;
+    text-align: left;
+    width: 80%;
+    font-size: 1rem;
+    padding: 0;
+}
