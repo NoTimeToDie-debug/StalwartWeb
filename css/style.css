@@ -6,7 +6,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* header */
+/* Header */
 header .header__container {
     display: flex;
     justify-content: flex-end;
@@ -58,13 +58,13 @@ header nav ul li a.active {
     color: #dc4312;
 }
 
-/* carousel */
+/* Carousel */
 #carousel {
     background-image: url(./../images/banner2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80rem;
+    height: 45rem;
 }
 
 #carousel .carousel__container {
@@ -93,30 +93,40 @@ header nav ul li a.active {
     font-size: 1.5rem;
 }
 
-/* about */
+/* About */
 #about {
     background-color: #29c0ff;
     color: white;
-    padding-left: 8rem;
 }
 
-#about h3 {
-    font-size: 2.5rem;
-    font-weight: 300;
+#about .about__container {
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem 0;
+}
+
+#about .about__container h3 {
+    font-size: 3rem;
+    font-weight: 400;
     padding: 1rem 0;
 }
 
-#about p {
+#about .about__container p {
     font-weight: 300;
-    padding: 1rem 10rem 1rem 0;
+    padding: 1rem 0;
     font-size: 1.5rem;
     color: #E2E2E2;
 }
 
-/* welcome */
+/* Welcome */
+#welcome .welcome__container {
+    width: 80%;
+    margin: auto;
+}
+
 #welcome h3 {
-    font-size: 2.5rem;
-    font-weight: 300;
+    font-size: 3rem;
+    font-weight: 400;
     padding: 1rem 0;
     text-align: center;
 }
@@ -134,7 +144,6 @@ header nav ul li a.active {
 #welcome .welcome__container__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 60%;
     margin: auto;
 }
 
@@ -184,7 +193,7 @@ header nav ul li a.active {
 }
 
 #welcome .welcome__items .welcome__title i {
-    color: #656dd4;
+    color: #29c0ff;
     transform: none ;
     width: 26px;
     margin-right: 7px;
@@ -203,4 +212,239 @@ header nav ul li a.active {
     width: 80%;
     font-size: 1rem;
     padding: 0;
+}
+
+/* Our Work */
+#our__work h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.our__work__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: auto;
+    grid-gap: 1rem;
+}
+
+#our__work .our__work__item {
+    position: relative;
+    overflow: hidden;
+}
+
+
+#our__work .our__work__item img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+#our__work .our__work__item .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+
+#our__work .our__work__item .text h4 {
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#our__work .our__work__item .text h4::after {
+    position: absolute;
+    content: "We help you in your success";
+    display: block;
+    width: 13rem;
+    padding: 0.5rem 1rem;
+    margin: 2rem 0;
+    font-size: 1rem;
+    font-weight: 100;
+    color: #29c0ff;
+    background-color: rgba(0,0,0,0.7);
+    transform: translateX(-115%);
+}
+
+#our__work .our__work__item .text span {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+#our__work .our__work__item:hover .text {
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.5s;
+}
+
+#our__work .our__work__item:hover img {
+    transform: scale(1.1);
+    transition: all 1s;    
+}
+
+#our__work .our__work__item .text:hover h4::after {
+    transform: translateX(0px);
+    transition: all 1s;
+}
+
+/* Succeed With Us */
+#succeed h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#succeed .succeed__container {
+    width: 80%;
+    margin: auto;
+}
+
+.clear__both {
+    clear: both;
+}
+
+#succeed .succeed__left {
+    float: left;
+    width: 50%;
+}
+
+#succeed .succeed__left h4 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-top: 2rem;
+}
+
+#succeed .succeed__left li {
+    color: #999;
+    list-style: none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+#succeed .succeed__left li i {
+    color: #29c0ff;
+    font-size: 1.5rem;
+}
+
+#succeed .succeed__right {
+    position: relative;
+    float: right;
+}
+
+#succeed .succeed__right img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#succeed .succeed__right .text {
+    position: absolute;
+    top: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    margin: auto;
+}
+
+#succeed .succeed__right .text span {
+    color: #29c0ff;
+    font-size: 3rem;
+}
+
+#succeed .succeed__right .text p {
+    margin: 3rem;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+/* Footer */
+footer {
+    background-color: #242424;
+    margin-top: 2rem;
+}
+
+.float__left_25 {
+    float: left;
+    width: 25%;
+}
+
+footer .footer__list {
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+}
+
+footer .footer__item1 h4,
+footer .footer__item2 h4,
+footer .footer__item3 h4 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 2rem;
+}
+
+footer .footer__item1 li,
+footer .footer__item2 li,
+footer .footer__item3 p {
+    color: #848484;
+    list-style: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+footer .footer__item3 .email {
+    margin-top: 1.5rem;
+}
+
+footer .footer__item3 .email input:first-child {
+    width: 72%;
+    padding: 9px 12px;
+    font-size: 1em;
+    float: left;
+    color: #8D8D8D;
+    outline: none;
+    border: none;
+    background: #fff;
+}
+
+footer .footer__item3 .email input:last-child {
+    width: 24%;
+    font-size: 14px;
+    float: left;
+    color: #fff;
+    outline: none;
+    padding: 9px 9px;
+    border: none;
+    background: #eb5424;
+}
+    
+footer .footer__item4 {
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+footer .footer__item4 h3 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 400;
+}
+
+footer .footer__item4 p {
+    font-size: 1em;
+    color: #8D8D8D;
+}
+
+footer .footer__item4 p span {
+    color: #eb5424;
 }
