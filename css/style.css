@@ -5,6 +5,13 @@
     font-size: 14px;
     font-family: 'Ubuntu', sans-serif;
 }
+/* to-top */
+.to__top {
+    position: fixed;
+    z-index: 1;
+    right: 1rem;
+    top: 52rem;
+}
 
 /* Header */
 header .header__container {
@@ -20,6 +27,10 @@ header .header__container__logo {
     position: absolute;
     top: 2.5rem;
     left: 0;
+}
+
+header .header__container__logo a {
+    text-decoration: none;
 }
 
 header .header__container__logo span {
@@ -75,6 +86,10 @@ header nav ul li a.active {
     text-align: right;
     justify-content: flex-end;
     padding-right: 10rem;
+}
+
+#carousel .carousel__details {
+    padding: 1rem;
 }
 
 #carousel .carousel__details h3 {
@@ -383,6 +398,15 @@ footer .footer__list {
     width: 80%;
     margin: auto;
     padding: 1rem;
+}
+
+footer .footer__container {
+    padding: 0 0 2.5rem 0;
+}
+
+footer .footer__item1 a {
+    text-decoration: none;
+    color: #848484;
 }
 
 footer .footer__item1 h4,
