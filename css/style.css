@@ -137,6 +137,7 @@ header nav ul li a.active {
 #welcome .welcome__container {
     width: 80%;
     margin: auto;
+    padding: 1.5rem 0;
 }
 
 #welcome h3 {
@@ -235,6 +236,10 @@ header nav ul li a.active {
     font-weight: 400;
     padding: 1rem 0;
     text-align: center;
+}
+
+#our__work .our__work_container {
+    padding: 1.5rem 0;
 }
 
 .our__work__list {
@@ -471,4 +476,9 @@ footer .footer__item4 p {
 
 footer .footer__item4 p span {
     color: #eb5424;
+}
+
+.iframe {
+    text-align: center;
+    padding: 1.5rem 0;
 }
