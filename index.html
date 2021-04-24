@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="./lib/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./lib/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 
+    <!-- light box -->
+    <link href="./lib/lightbox2-dev/dist/css/lightbox.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -100,22 +103,28 @@
             </p>
             <div class="welcome__container__list">
                 <div class="welcome__items">
-                    <img src="./images/a1.jpg" alt="">
-                    <div class="text">
-                        <i class="fas fa-search"></i>
-                    </div>
+                    <a href="./images/a1.jpg" data-lightbox="roadtrip">
+                        <img src="./images/a1.jpg" alt="">
+                        <div class="text">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </a>
                 </div>
                 <div class="welcome__items">
-                    <img src="./images/a2.jpg" alt="">
-                    <div class="text">
-                        <i class="fas fa-search"></i>
-                    </div>
+                    <a href="./images/a2.jpg" data-lightbox="roadtrip">
+                        <img src="./images/a2.jpg" alt="">
+                        <div class="text">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </a>
                 </div>
                 <div class="welcome__items">
-                    <img src="./images/a3.jpg" alt="">
-                    <div class="text">
-                        <i class="fas fa-search"></i>
-                    </div>
+                    <a href="./images/a3.jpg" data-lightbox="roadtrip">
+                        <img src="./images/a3.jpg" alt="">
+                        <div class="text">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </a>
                 </div>
                 <div class="welcome__items">
                     <div class="welcome__title">
@@ -261,19 +270,21 @@
     </footer>
 
     <!-- iframe -->
-    <div class="iframe">
+    <!-- <div class="iframe">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/BboMpayJomw" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
-    </div>
+    </div> -->
 
 
-
-    <!-- owl-carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous"></script>
+    <!-- light box -->
+    <script src="./lib/lightbox2-dev/dist/js/lightbox.js"></script>
+
+    <!-- owl-carousel -->
     <script src="./lib/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
